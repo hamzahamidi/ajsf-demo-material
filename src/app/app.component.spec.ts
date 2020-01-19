@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ajsf-demo'`, () => {
+  it(`should have as title 'ajsf-demo-material'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('ajsf-demo');
+    expect(app.title).toEqual('ajsf-demo-material');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('ajsf-demo app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('ajsf-demo-material app is running!');
   });
 });
